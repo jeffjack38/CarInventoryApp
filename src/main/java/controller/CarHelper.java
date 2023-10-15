@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 import model.Car;
 
 public class CarHelper {
-static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("CarCatalog");
+static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("CarInventoryApp");
 	
 	public void InsertCar(Car own) {
 		EntityManager em = emfactory.createEntityManager();

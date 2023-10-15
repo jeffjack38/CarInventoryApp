@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 import model.Owner;
 
 public class OwnerHelper {
-static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("CarCatalog");
+static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("CarInventoryApp");
 	
 	public void InsertItem(Owner own) {
 		EntityManager em = emfactory.createEntityManager();
