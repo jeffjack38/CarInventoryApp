@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ebdf4ce46c56ba2a31b89653b3a709643a82c5a8
 package model;
 
 import java.util.ArrayList;
@@ -12,6 +15,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 @Entity
 @Table(name="carcatalog")//figure out table name and database config??
 public class Car {
