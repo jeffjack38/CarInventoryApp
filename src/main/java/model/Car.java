@@ -1,7 +1,3 @@
-* @author jeade - jeaden
- * CIS175 - Fall 2023
- *Oct 6, 2023
- */
 package model;
 
 import java.util.ArrayList;
@@ -15,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 @Entity
 @Table(name="carcatalog")//figure out table name and database config??
 public class Car {
