@@ -27,17 +27,20 @@ input[type="submit"]:hover {
 	<p>View all ranks</p>
 	<form method = "post" action = "navigationServlet">
 	<table>
-	<c:forEach items="${requestScope.allItems}" var="currentitem">
+	<c:forEach items="${requestScope.allCars}" var="currentcar">
 	<tr>
-		<td><input type="radio" name="id" value="${currentitem.id}"></td>
-		<td>${currentitem.game}-&nbsp;</td>
-		<td>${currentitem.rank}</td>
+		<td><input type="radio" name="id" value="${currentcar.id}"></td>
+		<td>${currentcar.make}-&nbsp;</td>
+		<td>${currentcar.model}</td>
+		<c:forEach items="${currentcar.owners}" var="currentowner">
+		<td>${currentowner.name}</td>
+		</c:forEach>
 	</tr>
-	</c:forEach>
+	</c:forEach>	
 	</table>
-	<input type = "submit" value = "edit" name= "doThisToItem">
-	<input type = "submit" value = "delete" name= "doThisToItem">
-	<input type = "submit" value = "add" name = "doThisToItem">
+	<input type = "submit" value = "edit" name= "doThisToCar">
+	<input type = "submit" value = "delete" name= "doThisToCar">
+	<input type = "submit" value = "add" name = "doThisToCar">
 	</form>
 </body>
 </html>

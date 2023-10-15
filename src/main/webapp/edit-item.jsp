@@ -33,8 +33,8 @@ input[type="text"] {
 </head>
 <body>
 	<p><a href="index.html">Home</a> - </p>
-	<p><a href = "viewAllItemsServlet">View all ranks</a></p>
-	<form action = "editItemServlet" method="post">
+	<p><a href = "viewAllItemsServlet">View All Cars</a></p>
+	<form action = "editCarServlet" method="post">
 	Game: <input type ="text" name = "game" value= "${itemToEdit.game}">
 	Rank: <input type = "text" name = "rank" value= "${itemToEdit.rank}">
 	<input type = "hidden" name = "id" value="${itemToEdit.id}">

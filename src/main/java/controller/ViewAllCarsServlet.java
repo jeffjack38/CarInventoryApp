@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ViewAllItemsServlet
  */
-@WebServlet("/viewAllItemsServlet")
-public class ViewAllItemsServlet extends HttpServlet {
+@WebServlet("/viewAllCarsServlet")
+public class ViewAllCarsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ViewAllItemsServlet() {
+    public ViewAllCarsServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,10 +27,10 @@ public class ViewAllItemsServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		ListItemHelper dao = new ListItemHelper();
-		request.setAttribute("allItems", dao.showAllItems());
-		String path = "/ranks-list.jsp";
-		if(dao.showAllItems().isEmpty()){
+		CarHelper dao = new CarHelper();
+		request.setAttribute("allCars", dao.showAllCars());
+		String path = "/car-list.jsp";
+		if(dao.showAllCars().isEmpty()){
 			path = "/index.html";
 		}
 		getServletContext().getRequestDispatcher(path).forward(request, response);
