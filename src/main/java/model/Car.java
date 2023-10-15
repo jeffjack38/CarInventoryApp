@@ -1,7 +1,4 @@
-* @author jeade - jeaden
- * CIS175 - Fall 2023
- *Oct 6, 2023
- */
+
 package model;
 
 import java.util.ArrayList;
