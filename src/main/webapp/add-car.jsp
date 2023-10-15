@@ -18,11 +18,6 @@
         	<textarea class="form-control" id="model" name="model" rows="4" cols="50" required></textarea><br><br>
         </div>
         
-        <div class="form-group">
-        	<label for="status">Owner:</label>
-        	<textarea class="form-control" id="owner" name="owner" rows="4" required></textarea><br><br>
-        </div>
-        
         <input type="submit" value="Add Car">
     </form>
     <br>

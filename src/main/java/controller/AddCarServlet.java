@@ -34,6 +34,7 @@ public class AddCarServlet extends HttpServlet {
 		String model = request.getParameter("model");
 		
 		
+		
 		Car car = new Car(make, model);
 		CarHelper dao = new CarHelper();
 		dao.InsertCar(car);
