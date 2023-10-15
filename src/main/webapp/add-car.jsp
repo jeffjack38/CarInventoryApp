@@ -10,12 +10,12 @@
 		
 		<div class="form-group">
         	<label for="title">Make:</label>
-        	<input type="text" class="form-control" id="title" name="title" required><br><br>
+        	<input type="text" class="form-control" id="make" name="make" required><br><br>
         </div>
         
         <div class="form-group">
         	<label for="description">Model:</label>
-        	<textarea class="form-control" id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        	<textarea class="form-control" id="model" name="model" rows="4" cols="50" required></textarea><br><br>
         </div>
         
         <div class="form-group">

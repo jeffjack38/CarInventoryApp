@@ -42,7 +42,7 @@ public class NavigationServlet extends HttpServlet {
 		
 		// after all changes, we should redirect to the viewAllItems servlet
 		// The only time we don't is if they select to add a new item or edit
-		String path = "/viewAllItemsServlet";
+		String path = "/viewAllCarsServlet";
 		
 		if (act.equals("delete")) {
 			try {
@@ -57,8 +57,8 @@ public class NavigationServlet extends HttpServlet {
 			try {
 				Integer tempId = Integer.parseInt(request.getParameter("id"));
 				
-				Car itemToEdit = dao.searchForCarById(tempId);
-				request.setAttribute("itemToEdit", itemToEdit);
+				Car carToEdit = dao.searchForCarById(tempId);
+				request.setAttribute("carToEdit", carToEdit);
 				path = "/edit-item.jsp";
 			} catch (NumberFormatException e) {
 				System.out.println("Forgot to select an car");

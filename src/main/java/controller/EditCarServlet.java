@@ -12,14 +12,14 @@ import model.Car;
 /**
  * Servlet implementation class EditItemServlet
  */
-@WebServlet("/editItemServlet")
-public class EditItemServlet extends HttpServlet {
+@WebServlet("/editCarServlet")
+public class EditCarServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EditItemServlet() {
+    public EditCarServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -43,13 +43,13 @@ public class EditItemServlet extends HttpServlet {
 		String model = request.getParameter("model");
 		Integer tempId = Integer.parseInt(request.getParameter("id"));
 		
-		Car itemToUpdate = dao.searchForCarById(tempId);
-		itemToUpdate.setMake(make);
-		itemToUpdate.setModel(model);
+		Car carToUpdate = dao.searchForCarById(tempId);
+		carToUpdate.setMake(make);
+		carToUpdate.setModel(model);
 		
-		dao.updateCar(itemToUpdate);
+		dao.updateCar(carToUpdate);
 		
-		getServletContext().getRequestDispatcher("/viewAllItemsServlet").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllCarsServlet").forward(request, response);
 	}
 
 }
