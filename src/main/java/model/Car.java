@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> ebdf4ce46c56ba2a31b89653b3a709643a82c5a8
 package model;
 
 import java.util.ArrayList;
@@ -36,9 +33,8 @@ public class Car {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Car(int id, String make, String model) {
+	public Car(String make, String model) {
 		super();
-		this.id = id;
 		this.make = make;
 		this.model = model;
 	}

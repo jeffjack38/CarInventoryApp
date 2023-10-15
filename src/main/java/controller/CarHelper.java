@@ -48,7 +48,7 @@ static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("
 		em.close();
 	}
 
-	public Car searchForItemById(int idToEdit) {
+	public Car searchForCarById(int idToEdit) {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		Car found = em.find(Car.class, idToEdit);
